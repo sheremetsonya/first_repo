@@ -1,6 +1,6 @@
 while True:
     number1=float(input("введи перше число: "))
-    operation=input("введи операцію (+, -, *, /): ")
+    operation=input("введи операцію (+, -, *, /, %, **): ")
     number2=float(input("введи друге число:"))
     if operation=="+":
        print("результат:", number1 + number2)
@@ -8,6 +8,12 @@ while True:
        print("результат:", number1 - number2)
     elif operation=="*":
        print("результат:", number1 * number2)
+    elif operation=="%":
+       result= number1 * number2 / 100
+       print("результат:", result)
+    elif operation=="**":
+       result=number1 ** number2
+       print("результат:", result)
     elif operation== "/":
        if number2 != 0:
           print("результат:", number1 / number2)
